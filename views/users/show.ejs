@@ -1,0 +1,23 @@
+<!--Include header partial -->
+<% include ../partials/header %>
+
+<!-- Display user profile and associated campgrounds -->
+<div class="row">
+	<div class="col-md-4">
+			<h1 class="text-center"><%= user.firstName + " " + user.lastName %></h1>
+		<div class="card">
+			<img id="customimage" src="<%= user.avatar %>" alt="user profile image">
+			<div class="card-body">Email Address: <a href="mailto:<%= user.email %>"><%= user.email %></a></div>
+		</div>
+	</div>
+	<div class="col-md-8 mt-3" >
+		<h3><%= user.username %>'s Campgrounds:</h3>
+		<ul>
+		<% campgrounds.forEach(function(campground) { %>
+			<li><a href="/campgrounds/<%= campground.id %>"><%= campground.name %></a></li>
+		<% }); %>
+		</ul>
+	</div>
+</div>
+<!--Include footer partial -->
+<% include ../partials/footer %>
