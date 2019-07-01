@@ -25,7 +25,7 @@ var commentRoutes = require("./routes/comments"),
   indexRoutes = require("./routes/index");
 
 //Mongoose configuration
-mongoose.connect("mongodb://localhost:27017/yelp_camp", {
+mongoose.connect("mongodb+srv://jdeokie1:pathfinder_05@cluster0-smfki.mongodb.net/test?retryWrites=true&w=majority", {
   useNewUrlParser: true
 });
 mongoose.set("useFindAndModify", false);
