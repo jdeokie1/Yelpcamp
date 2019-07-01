@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node app.js"
+    "start": "node app.js"
   },
   "author": "Eric Deokie",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "async": "^3.0.1",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.0.0",
     "dotenv": "^8.0.0",
     "ejs": "^2.6.2",
     "ejs-lint": "^0.3.0",
