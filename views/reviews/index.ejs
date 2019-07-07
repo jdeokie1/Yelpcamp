@@ -3,8 +3,8 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <h1 style="text-align: center">Review Page: <%= campground.name %></h1>
+        <div class="col-lg-6 col-md-3">
+             <h1 style="text-align: center">Review Page: <%= campground.name="" %=""></%=></h1>
             <div class="thumbnail">
                 <div class="caption-full">
                     <% if (campground.rating === 0) { %>
@@ -24,15 +24,15 @@
                         Current campground rating: <strong><%= campground.rating.toFixed(2) %></strong>
                     </p>
                     <p><h4>All reviews for this campground:</h4></p>
-                    <hr style="margin-top: 0;">
+                    <hr class="mt-0">
                     <% campground.reviews.forEach(function(review){ %>
                     <div class="row">
-                        <div class="col-md-3">
+    <div class="col-lg-3">
                             <%- '<span class="fa fa-star checked"></span>'.repeat(review.rating) %><%- '<span class="fa fa-star"></span>'.repeat(5 - review.rating) %>
                             <div>Review by: <strong><%= review.author.username %></strong></div>
                             <span><em><%= review.updatedAt.toDateString() %></em></span>
                         </div>
-                        <div class="col-md-9">
+                       <!--g- --> <div class="col-md-9">
                             <p style="text-align: justify; word-wrap: break-word;">
                                 <%= review.text %>
                             </p>
