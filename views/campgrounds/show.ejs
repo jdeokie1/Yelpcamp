@@ -219,7 +219,8 @@
         });
     }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8PtiPD0NbeMYiHGtCzs4ozody5FSnVck&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=<%=process.env.API_KEY%>&callback=initMap"></script>
+
 
 <!--Include the footer partials -->
 <% include ../partials/footer %>
